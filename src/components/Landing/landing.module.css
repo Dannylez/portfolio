@@ -1,0 +1,108 @@
+.landing {
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+.catLogo {
+    width: 20vw;
+    height: 18vw;
+}
+
+.work {
+    display: flex;
+    width: 55vw;
+    height: 40vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.workText {
+    text-align: left;
+    width: 30vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 20vw;
+    height: 40vh;
+}
+
+.contactBtn {
+    border-radius: 8px;
+    border: 2px solid transparent;
+    justify-self: end;
+    padding: 1vh;
+    height: 3vh;
+    width: 12vw;
+    font-size: 2vh;
+    background-color: #213547;
+    color: white;
+    text-decoration: none;
+}
+
+.contactBtn:hover {
+    background-color: #934ecfa8;
+    cursor: pointer;
+  }
+
+
+.cup {
+    width: 16vw;
+    position: relative;
+  }
+  
+.coffee {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+.coffeeSteam {
+    width: 2vw;
+    height: 5vw;
+    background-color: #e6e6e6;;
+    opacity: 0;
+    transform-origin: 50% 0;
+    border-radius: 50%;
+    animation: steam-rise 5s infinite ease-in-out;
+  }
+  
+.steam{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.steam1 {
+    height: 5vw;
+    animation-delay: 0.5s;
+  }
+  
+.steam2 {
+    animation-delay: 3.9s;
+  }
+  
+.steam3 {
+    animation-delay: 2.2s;
+  }
+  
+
+
+  @keyframes moveRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }

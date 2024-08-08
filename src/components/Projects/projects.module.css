@@ -1,0 +1,60 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 15px 0;
+    font-size: 60px;
+    line-height: 1.1;
+    text-align: center;
+    color: yellow;
+}
+
+.container {
+    width: 80%;
+}
+
+.subTitle {
+    margin: 15px 0;
+    font-size: 45px;
+    line-height: 1.1;
+    color: #f05252;
+}
+
+.link {
+    transform: translateX(0) translateY(5px);
+    transition: transform 1s ease;
+}
+
+.card {
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid rgb(85, 85, 85);
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.projectName {
+    margin: 0;
+    color: #aaa;
+    font-size: 32px;
+}
+
+.paragraph {
+    width: 50%;
+    color: #aaa;
+    text-align: left;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: rgba(53, 41, 41, 0.25);
+}
+.card:hover .link {
+    transform: translateX(5px) translateY(-5px);
+    transition: transform 1s ease;
+    
+}
