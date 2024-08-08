@@ -1,17 +1,17 @@
-import { useState } from 'react';
+/* import { useState } from 'react'; */
 import styles from './header.module.css';
 
 function Header() {
-	const [navOpen, setNavOpen] = useState(false);
+	/* const [navOpen, setNavOpen] = useState(false);
 	const isNavShowed = navOpen
 		? styles.isNavShowed
 		: styles.isNavNotShowed;
-
-	const openNav = () => {
+ */
+	/* 	const openNav = () => {
 		setNavOpen(!navOpen);
 		console.log(navOpen, isNavShowed);
 	};
-
+ */
 	return (
 		<header className={styles.container}>
 			<div>
