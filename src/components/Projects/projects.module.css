@@ -14,6 +14,10 @@
 
 .container {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .subTitle {
@@ -29,6 +33,7 @@
 }
 
 .card {
+    display: flex;
     padding: 15px;
     margin-top: 15px;
     border: 1px solid rgb(85, 85, 85);
@@ -44,9 +49,15 @@
 }
 
 .paragraph {
-    width: 50%;
+    width: 90%;
     color: #aaa;
     text-align: left;
+}
+
+.image {
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
 }
 
 .card:hover {
@@ -57,4 +68,58 @@
     transform: translateX(5px) translateY(-5px);
     transition: transform 1s ease;
     
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.onDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.imageOnDisplay {
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+.container {
+    width: 100%;
+}
+
+    .carrete {
+        display: none;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .onDisplay {
+        height: 150px;
+        width: 300px;
+    }
+
+    .imageOnDisplay {
+        height: 150px;
+    }
 }

@@ -5,4 +5,5 @@
   width: 100vw;
   margin: 0 auto;
   font-family: 'Sweater';
+  box-sizing: border-box;
 }

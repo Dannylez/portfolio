@@ -1,15 +1,17 @@
+import { About } from '../About';
 import { Presentation } from '../Presentation';
 import { Projects } from '../Projects';
 import { Tags } from '../Tags';
 import styles from './landing.module.css';
 
-function Landing() {  
-  return (
-    <div className={styles.landing}>
-        <Presentation/>
-        <Tags/>
-        <Projects/>
-        {/* <section className={styles.work}>
+function Landing() {
+	return (
+		<div className={styles.landing}>
+			<Presentation />
+			<About />
+			<Tags />
+			<Projects />
+			{/* <section className={styles.work}>
           <div className={styles.left}>
             <div className={styles.coffee}>
               <div className={styles.steam}>
@@ -28,14 +30,14 @@ function Landing() {
             </div>
           </div>
         </section> */}
-        {/* <section className={styles.projects}>
+			{/* <section className={styles.projects}>
           <h2 className={styles.title}><strong>Projects</strong></h2>
           <div className={styles.card}>
 
           </div>
         </section> */}
-    </div>
-  )
+		</div>
+	);
 }
 
-export default Landing
+export default Landing;
