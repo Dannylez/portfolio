@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 150px;
   align-items: center;
+  overflow-x: hidden;
 }
 
 

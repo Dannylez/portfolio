@@ -100,13 +100,48 @@
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 700px) {
-.container {
-    width: 100%;
-}
+@media only screen and (max-width: 800px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .subTitle {
+        font-size: 30px;
+    }
+
+    .projectName {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 100%;
+    }
 
     .carrete {
-        display: none;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 70vw;
+        overflow-x: auto;
+        gap: 40px;
+    }
+
+    .imageContain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 70vw;
+        height: 35vw;
+        flex-shrink: 0;
+    }
+
+    .image {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
     }
 
     .card {
@@ -115,11 +150,7 @@
     }
 
     .onDisplay {
-        height: 150px;
-        width: 300px;
+        display: none;
     }
 
-    .imageOnDisplay {
-        height: 150px;
-    }
 }

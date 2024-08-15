@@ -28,7 +28,7 @@ export function Card(project: Project) {
 					<svg
 						stroke="currentColor"
 						fill="currentColor"
-						stroke-width="0"
+						strokeWidth="0"
 						viewBox="0 0 24 24"
 						className={styles.link}
 						height="1em"
@@ -46,11 +46,18 @@ export function Card(project: Project) {
 			<div className={styles.gallery}>
 				<div className={styles.carrete}>
 					{project.images.map((image) => (
-						<img
-							className={styles.image}
-							src={image}
-							onMouseEnter={() => handleMouseHover1(image)}
-						/>
+						<div
+							key={image}
+							className={styles.imageContain}
+						>
+							<img
+								className={styles.image}
+								src={image}
+								onMouseEnter={() =>
+									handleMouseHover1(image)
+								}
+							/>
+						</div>
 					))}
 				</div>
 				<div className={styles.onDisplay}>

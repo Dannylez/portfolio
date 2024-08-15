@@ -11,6 +11,7 @@
     font-size: 60px;
     color: yellow;
     align-self: flex-end;
+    margin: 0;
 }
 
 .text {
@@ -72,3 +73,40 @@
 .logo {
     width: 50px;
 }
+
+@media screen and (max-width: 800px) {
+    .about {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .text {
+        width: 100%;
+        align-items: center;
+    }
+
+    .title {
+        align-self: center;
+        font-size: 45px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .contactMe {
+        font-size: 20px;
+        align-self: center;
+        width: 60%;
+        height: 30px;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .photoContainer {
+        position: inherit;
+    }
+  }
